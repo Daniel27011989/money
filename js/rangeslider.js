@@ -13,5 +13,5 @@ output.innerHTML = slider2.value; // Display the default slider value
 
 // Update the current slider value (each time you drag the slider handle)
 slider2.oninput = function() {
-  output.innerHTML = slider2.value;
+  output2.innerHTML = slider2.value;
 } 
