@@ -11,7 +11,7 @@ output.innerHTML = slider.value; // Display the default slider value
 slider.oninput = function() {
   output.innerHTML = slider.value;
   var pagomensual = slider.value/slider2.value;
-  var interesmensual = (slider2.value/12) * interes * slider.value;
+  var interesmensual = slider.value * (interes / 12);
   var pago = pagomensual + interesmensual;
   output3.innerHTML = pago.toFixed(2);
 } 
@@ -22,7 +22,7 @@ output2.innerHTML = slider2.value; // Display the default slider value
 slider2.oninput = function() {
   output2.innerHTML = slider2.value;
   var pagomensual = slider.value/slider2.value;
-  var interesmensual = (slider2.value/12) * interes * slider.value;
+  var interesmensual = slider.value * (interes / 12);
   var pago = pagomensual + interesmensual;
   output3.innerHTML = pago.toFixed(2);
 } 
