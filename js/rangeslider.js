@@ -20,4 +20,11 @@ slider2.oninput = function() {
 var output3 = document.getElementById("pago");
 
 // Update the current Pago value (each time you drag the slider handle)
-output3.innerHTML = (slider2.value/360) * interes * slider.value;
+slider.oninput = function() {
+	var pago = (slider2.value/360) * interes * slider.value;
+	output3.innerHTML = pago.toFixed(2);
+} 
+slider2.oninput = function() {
+	var pago = (slider2.value/360) * interes * slider.value;
+	output3.innerHTML = pago.toFixed(2);
+} 
